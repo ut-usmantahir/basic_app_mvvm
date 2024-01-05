@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SaavyAI</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="enter_your_email_address">Enter Your Email Address</string>
+    <string name="reset_my_password">Reset My Password</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_your_password">Enter Your Password</string>
+</resources>

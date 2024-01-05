@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAppBg"
+        tools:context=".ui.activities.LoginActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAppIcon"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_90sdp"
+            android:elevation="@dimen/_1sdp"
+            android:layout_margin="@dimen/_44sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.12"
+            android:src="@drawable/ic_splash"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etUserName"
+            style="@style/EditTextTheme"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="@string/username"
+            android:maxLength="50"
+            android:imeOptions="actionNext"
+            android:layout_marginTop="@dimen/common_top_extra_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivAppIcon"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etPassword"
+            style="@style/EditTextTheme"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="@string/password"
+            android:maxLength="50"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etUserName"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            style="@style/ButtonTheme"
+            android:text="@string/login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etPassword"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Login"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
